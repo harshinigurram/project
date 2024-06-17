@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Founders and Freelancers Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#founders">For Founders</a></li>
+                <li><a href="#freelancers">For Freelancers</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#login">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="founders">
+            <h2>For Founders</h2>
+            <p>Find the best freelancers for your project needs.</p>
+        </section>
+        <section id="freelancers">
+            <h2>For Freelancers</h2>
+            <p>Get hired by top startups and companies.</p>
+        </section>
+        <section id="signup">
+            <h2>Sign Up</h2>
+            <form action="signup.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <label for="role">Role:</label>
+                <select id="role" name="role">
+                    <option value="founder">Founder</option>
+                    <option value="freelancer">Freelancer</option>
+                </select><br><br>
+                <input type="submit" value="Sign Up">
+            </form>
+        </section>
+        <section id="login">
+            <h2>Log In</h2>
+            <form action="login.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Log In">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
